@@ -12,10 +12,6 @@
 
 <BorderPane prefHeight="600" prefWidth="800" style="-fx-background-color: #217A26;" stylesheets="@../IdeaProjects/Cincuentazo_Ultimate/src/main/resources/com/cincuentazo/_0zo/vista/estilos.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cincuentazo._0zo.controlador.ControladorJuego">
 
-    <top>
-        <Label fx:id="lblTitulo" style="-fx-font-size: 26px; -fx-text-fill: white; -fx-font-weight: bold;" text="🎴 El Cincuentazo 🎴" BorderPane.alignment="CENTER" />
-    </top>
-
     <center>
         <VBox alignment="CENTER" spacing="20">
          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
@@ -39,13 +35,14 @@
          </HBox>
          <ImageView fx:id="imgMesa" fitHeight="200.0" fitWidth="130.0">
             <image>
-               <Image url="@Captura%20de%20pantalla%202025-11-01%20205724.png" />
+               <Image url="@Mesa.png" />
             </image>
             <VBox.margin>
                <Insets top="10.0" />
             </VBox.margin>
          </ImageView>
-            <Button fx:id="botonIniciar" onAction="#btnTirarCarta" text="Tirar Carta" />
+            <Button fx:id="botonIniciar" onAction="#iniciarJuego" text="Tirar Carta" />
+
         </VBox>
     </center>
 
@@ -61,7 +58,7 @@
          </Label>
          <ImageView fx:id="imgMaquina1" fitHeight="200.0" fitWidth="161.0">
             <image>
-               <Image url="@Captura%20de%20pantalla%202025-11-01%20211847(1).png" />
+               <Image url="@MazoMaquina.png" />
             </image>
          </ImageView>
          <Label fx:id="lblMaquina2" prefHeight="55.0" prefWidth="124.0" style="-fx-text-fill: white; -fx-font-weight: bold;" text=" Maquina 2">
@@ -71,7 +68,7 @@
          </Label>
          <ImageView fx:id="imgMaquina2" fitHeight="200.0" fitWidth="161.0">
             <image>
-               <Image url="@Captura%20de%20pantalla%202025-11-01%20211847(1).png" />
+               <Image url="@MazoMaquina.png" />
             </image>
          </ImageView>
          <Label fx:id="lblMaquina3" prefHeight="17.0" prefWidth="146.0" style="-fx-text-fill: white; -fx-font-weight: bold;" text=" Maquina 3">
@@ -82,7 +79,7 @@
             <HBox fx:id="contenedorCartas" spacing="10" />
          <ImageView fx:id="imaMaquina3" fitHeight="200.0" fitWidth="161.0">
             <image>
-               <Image url="@Captura%20de%20pantalla%202025-11-01%20211847(1).png" />
+               <Image url="@MazoMaquina.png" />
             </image>
          </ImageView>
         </HBox>
@@ -100,7 +97,7 @@
             </Label>
             <ImageView fx:id="imgMazo" fitHeight="200.0" fitWidth="137.0">
                <image>
-                  <Image url="@Captura%20de%20pantalla%202025-11-01%20211847.png" />
+                  <Image url="@CartaReversa.png" />
                </image>
                <VBox.margin>
                   <Insets left="10.0" top="25.0" />
@@ -119,7 +116,7 @@
             </Label>
             <ImageView fx:id="imgJugador" fitHeight="185.0" fitWidth="200.0">
                <image>
-                  <Image url="@Captura%20de%20pantalla%202025-11-01%20205222.png" />
+                  <Image url="@Mazo.png" />
                </image>
                <VBox.margin>
                   <Insets right="10.0" top="25.0" />
@@ -128,5 +125,22 @@
          </children>
       </VBox>
    </right>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="img1Logo" fitHeight="34.0" fitWidth="51.0">
+               <image>
+                  <Image url="@logo1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lnlTitulo" style="-fx-text-fill: WHITE; -fx-font-weight: BOLD; -fx-font-size: 30;" text="EL CINCUENTAZO" />
+            <ImageView fx:id="ima2Logo" fitHeight="30.0" fitWidth="44.0">
+               <image>
+                  <Image url="@logo2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
 
 </BorderPane>

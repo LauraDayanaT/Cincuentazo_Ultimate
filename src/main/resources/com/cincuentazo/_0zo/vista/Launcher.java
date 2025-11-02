@@ -10,6 +10,9 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage escenario) throws Exception {
+        //lineas comentadas para ver las interfaces nuevas
+       // FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/cincuentazo/_0zo/vista/ViewMain.fxml"));
+       // FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/cincuentazo/_0zo/vista/viewStart.fxml"));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/cincuentazo/_0zo/vista/VistaPrincipal.fxml"));
         Parent raiz = loader.load();
 

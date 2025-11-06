@@ -1,6 +1,7 @@
 module com.cincuentazo._0zo {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
 
     // Launcher
     opens com.cincuentazo._0zo to javafx.graphics, javafx.fxml;
